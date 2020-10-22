@@ -1,17 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-vector<int>two_sum(vector<int>&nums,int target)
-{
-	vector<int>refer;
-	int x;
-	for(int i=0;i<nums.size();i++)
-	{
-		x=target-nums[i];
 
-	}
-	return refer;	
-}
-	/*
 	vector<int> twoSum(vector<int>& nums, int target) {
     unordered_map<int, int> imap;
     
@@ -24,7 +13,23 @@ vector<int>two_sum(vector<int>&nums,int target)
         imap[nums[i]] = i;
     }
 }
-	*/
+
+
+
+/*
+vector<int>two_sum(vector<int>&nums,int target)
+{
+	vector<int>refer;
+	int x;
+	for(int i=0;i<nums.size();i++)
+	{
+		x=target-nums[i];
+
+	}
+	return refer;	
+}*/
+
+
 
 	/*
 	    vector<int> twoSum(vector<int>& nums, int target) {
