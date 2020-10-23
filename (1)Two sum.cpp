@@ -17,17 +17,21 @@ using namespace std;
 
 
 /*
-vector<int>two_sum(vector<int>&nums,int target)
-{
-	vector<int>refer;
-	int x;
-	for(int i=0;i<nums.size();i++)
-	{
-		x=target-nums[i];
+    vector<int> twoSum(vector<int>& nums, int target) {
+        const int size = nums.size();
+        vector<int> twoSums;
+        for (int i = 0 ; i < size - 1; i++ )
+            for (int j = i+1; j < size; j++)
+                if(nums[i] + nums[j] == target)
+                {
+                    twoSums.push_back(i);
+                    twoSums.push_back(j);
+                    return twoSums;
+                }
+        return twoSums;
+    }
 
-	}
-	return refer;	
-}*/
+*/
 
 
 
