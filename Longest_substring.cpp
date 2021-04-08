@@ -7,7 +7,7 @@ void IO()
 	freopen("output.txt","w",stdout);
 	#endif
 }
-
+				// The complexity is O(N^2)
 int longestUniqueSubsttr(string str)
 {
 	int n = str.size();
@@ -39,3 +39,19 @@ int main()
 	cout <<len;
 	return 0;
 }
+
+ 					//Complexity is O(N+D)
+int lengthOfLongestSubstring(string s) {
+       int res=0;
+	int n = s.size();
+	vector<int> lastIndex(256,-1);
+	int j=0;
+	for (int i = 0; i < n; ++i)
+	{
+		j=max(j,lastIndex[s[i]]+1);
+		res = max(res,i-j+1);
+		lastIndex[s[i]]=i;
+	}
+	return res;
+    
+    }
